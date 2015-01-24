@@ -60,7 +60,6 @@
       });
     };
     
-    console.log('starting ajax request');
     $.ajax({
       url: 'https://api.stackexchange.com/2.2/users/' + settings.userId + '?site=' + settings.site + '&jsonp=?',
       dataType: 'jsonp',
