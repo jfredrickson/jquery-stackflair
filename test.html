@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StackFlair Test</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="jquery.stackflair.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("div.stackflair1").stackflair({
+        userId: 54742
+      });
+      $("div.stackflair2").stackflair({
+        userId: 1,
+        site: 'superuser.com'
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="jquery.stackflair.css"/>
+</head>
+<body>
+  <h1>StackFlair Test</h1>
+  <div class="stackflair1"></div>
+  <div class="stackflair2"></div>
+</body>
+</html>
