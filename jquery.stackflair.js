@@ -9,10 +9,13 @@
     };
     var settings = $.extend(defaults, options);
     
+    var containers = [];
+    
     this.each(function () {
       var container = $(this);
       var flair = $('<div/>').addClass(settings.classPrefix + 'container');
       flair.appendTo(container);
+      containers.push(flair);
     });
     
     var buildBadgeData = function (user, badgeType) {
@@ -27,8 +30,8 @@
     };
     
     var buildFlair = function (user) {
-      $('div.' + settings.classPrefix + 'container').each(function () {
-        var flair = $(this);
+      containers.forEach(function (entry) {
+        var flair = entry;
         var flairInner = $('<div/>').addClass(settings.classPrefix + 'inner');
         var userLink = $('<a/>').attr('href', user.link);
         flairInner.appendTo(userLink);

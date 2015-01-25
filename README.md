@@ -30,7 +30,3 @@ Specifies the user ID of the StackExchange user. Note that user IDs are unique t
 
 ### classPrefix
 Allows override of the CSS class prefix used by the plugin.
-
-## Known Issues
-
-Currently does not play nice when there are multiple instances of flair on a page.
